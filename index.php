@@ -156,6 +156,8 @@
             </div>
             <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-align-center">
                 <p class="lead">Upgrade to create more raid teams, allow for more players per team and keep track of larger item pools throughout your guild's history.</p>
+                <p class="lead">On average a guild will require 1,000 item entries to track 1 difficulty of raid loot per tier.</p>
+                <p class="lead">In other words, a guild tracking all heroic difficulty loot from week one until the end of the Uldir raid tier in BfA will accrue approximately 1,000 items.</p>
             </div>
             <div class="container">
                 <div class="card-deck mb-3 text-center">
@@ -166,7 +168,7 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>1000 item entries before auto delete</li>
+                                <li>1,000 item entries before auto delete</li>
                                 <li>1 raid team</li>
                                 <li>30 member maximum</li>
                             </ul>
@@ -180,7 +182,7 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$1 <small class="text-muted">/ mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>2500 item entries per raid team before auto delete</li>
+                                <li>2,500 item entries per raid team before auto delete</li>
                                 <li>2 raid teams</li>
                                 <li>Max of 40 members per team</li>
                                 <li>Discord benefits</li>
@@ -195,7 +197,7 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$3 <small class="text-muted">/ mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>5000 item entries per raid team before auto delete</li>
+                                <li>5,000 item entries per raid team before auto delete</li>
                                 <li>4 raid teams</li>
                                 <li>Max of 50 members per team</li>
                                 <li>Discord benefits</li>
@@ -208,9 +210,9 @@
                             <h4 class="my-0 font-weight-normal">Empire</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$10 <small class="text-muted">/ mo</small></h1>
+                            <h1 class="card-title pricing-card-title">$5 <small class="text-muted">/ mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Unlimited item entries</li>
+                                <li>10,000 item entries per raid before auto delete</li>
                                 <li>10 raid teams</li>
                                 <li>Max of 60 members per team</li>
                                 <li>Discord benefits</li>

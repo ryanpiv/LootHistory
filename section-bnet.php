@@ -1,11 +1,14 @@
-<div class="col-12 my-5">
+
+<div class="col-12 mt-5">
     <h2 class="display-4">Authorize Battle.net</h2>
     <p class="lead">This process will automatically find any available guilds your Battle.net profile is a part of.  You'll be able to select the guilds you want to manage or request access to view ones you're already a part of.</p>
-    <hr class="my-4">
+    <hr class="">
+</div>
+<div class="col-12 mt-3">
     <?php if (!(isset($_SESSION['bnet_access_token']))) { ?>
-    <a id="getting-started-login-button" class="btn btn-primary btn-lg" href= <?php echo '"' . $bnetAuthURL . '"'; ?> role="button">Authorize Battle.net</a>
+    <a id="getting-started-bnet-login-button" class="btn btn-primary btn-lg" data-auth=<?php echo '"' . $bnetAuthURL . '"'; ?> href= <?php echo '"' . $bnetAuthURL . '"'; ?> role="button">Authorize Battle.net</a>
     <?php } else { ?>
-    <a id="getting-started-login-button" class="btn disabled btn-lg" role="button">You have already authorized Battle.net</a>
+    <a id="getting-started-bnet-login-button" class="btn disabled btn-lg" role="button">You have already authorized Battle.net</a>
     <?php } ?>
 </div>
           
@@ -16,7 +19,19 @@
     <p class="lead">You must be in a guild.</p>
     <hr class="my-4">
 </div>
-<div class="col-lg-3 col-12">
+
+<div class="col-12 col-lg-3">
+    <div class="dropdown">
+        <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Region
+        </button>
+        <div id="guildRegionList" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a href="#" class="dropdown-item" onclick="dropDownSelect(this); return false;">US</a>
+            <a href="#" class="dropdown-item" onclick="dropDownSelect(this); return false;">EU</a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-12 my-2">
     <div class="dropdown">
         <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Server-Guild

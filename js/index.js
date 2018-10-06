@@ -52,3 +52,9 @@ function dropDownSelect(item){
     $(item).parents('.dropdown').find('button').text($(item).text());
     $(item).parents('.dropdown').find('button').val($(item).text());
 }
+
+function setBnetAuth(ele){
+    var url = $('#getting-started-bnet-login-button').data('auth');
+    url += $(ele).text();
+    $('#getting-started-bnet-login-button').attr('href', url);
+}

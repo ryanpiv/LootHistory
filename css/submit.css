@@ -1,0 +1,9 @@
+body{
+	background: url(../media/wallhaven-682835.jpg);
+    background-size:cover;
+    height:100vh;
+}
+
+.container-submit{
+	opacity:0.9;
+}

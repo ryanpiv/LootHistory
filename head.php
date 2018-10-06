@@ -36,51 +36,6 @@
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand" rel="stylesheet">
 
-<!-- Google OAuth -->
-<!-- <script>
-    function renderButton() {
-      gapi.signin2.render('getting-started-login-button', {
-        'width': 240,
-        'height': 50,
-        'longtitle': true,
-        'theme': 'dark'
-      });
-    }
-</script>
-<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-<meta name="google-signin-client_id" content="30633313634-u8la6rft8k3fkkom47h7bjif8hq4c84b.apps.googleusercontent.com"> -->
-<script src="https://apis.google.com/js/api:client.js"></script>
-<script>
-    // Called when Google Javascript API Javascript is loaded
-    function HandleGoogleApiLibrary() {
-        // Load "client" & "auth2" libraries
-        gapi.load('client:auth2', {
-            callback: function() {
-                // Initialize client & auth libraries
-                gapi.client.init({
-                    apiKey: googleApiKey,
-                    clientId: googleClientId,
-                    scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.me'
-                }).then(
-                    function(success) {
-                        // Libraries are initialized successfully
-                        // You can now make API calls
-                    },
-                    function(error) {
-                        // Error occurred
-                        // console.log(error) to find the reason
-                    }
-                );
-            },
-            onerror: function() {
-                // Failed to load libraries
-            }
-        });
-    }
-</script>
-<script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};HandleGoogleApiLibrary()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
-
-
 <?php
     require_once "google/config.php";
     require_once 'blizzard/oauth/bnetConfig.php';
